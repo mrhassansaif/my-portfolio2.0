@@ -267,6 +267,51 @@
   <!-- Footer Section End -->
 
   <!-- Js Plugins -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Define the API URL for fetching IP data
+        let apiURL = 'https://ipinfo.io/json?token=c1452d141197e8';
+
+        // Function to fetch the IP data
+        const getIP = async () => {
+            try {
+                let response = await fetch(apiURL);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                let IPData = await response.json();
+                console.log(IPData);  // Log IP data to console
+
+                // Prepare the email data
+                let emailData = {
+                    email: "hassansaif0ki@gmail.com",
+                    message: `A visitor from IP address ${IPData.ip}, city ${IPData.city}, region ${IPData.region}, country ${IPData.country} visited your portfolio.`
+                };
+
+                // Send the email notification using Formspree
+                fetch('https://formspree.io/f/xjkbboyb', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(emailData)
+                }).then(response => {
+                    if (response.ok) {
+                        console.log('Visit logged successfully');
+                    } else {
+                        console.log('Failed to log visit');
+                    }
+                }).catch(error => console.error('Error:', error));
+
+            } catch (error) {
+                console.error('Fetching IP data failed:', error);
+            }
+        };
+
+        // Call the function to get the IP and send the email
+        getIP();
+    });
+</script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
