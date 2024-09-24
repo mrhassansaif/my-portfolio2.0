@@ -73,7 +73,7 @@
             <div class="col-lg-6">
               <div class="hero__text">
                 <h2>I'm Muhammad Hassan Bin Saif</h2>
-                <span>MERN Developer -- Graphic Designer -- Junior AI Engineer --
+                <span>Web and Mobile Application Developer -- Graphic Designer -- Junior AI Engineer --
                   Photographer</span>
                 <a href="#redir" class="primary-btn">more about me</a>
                 <br />
@@ -124,26 +124,50 @@
 
             <div class="about__text__desc">
               <p>
-                Hello! I'm Muhammad Hassan Bin Saif, a passionate web developer and designer based in Karachi, Pakistan.
-                Growing up in Islamabad, I found my love for coding early on, and it has since become an integral part
-                of my life. I am deeply fascinated by the endless possibilities of programming, often finding myself
-                immersed in coding even in my dreams.
+                Hey there! 👋 </p>
+              <p>
+
+                I'm <b>Muhammad Hassan Bin Saif</b> — but you can call me <b>Hassan</b>. Based in Karachi, Pakistan, I'm a passionate
+                MERN Stack Developer who loves crafting elegant, efficient, and fun web experiences. My journey began
+                with a love for gaming, which quickly spiraled into a fascination with the world of code. Now, I spend
+                my days turning ideas into digital reality, and my nights either watching anime, diving into MMO-RPGs,
+                or gazing at the stars, contemplating the mysteries of the cosmos. 🌌
+
+              <p><b>The Developer Side 🖥️</b><br>
+                Currently pursuing a Bachelor of Science in Computer Science at the University of the People, I thrive
+                in both front-end and back-end development. My go-to tools include React, Node.js, and traditional web
+                technologies like HTML, CSS, and JavaScript. Whether it's designing an intuitive interface or building
+                out robust, scalable systems, I take pride in solving complex problems and making the web more
+                accessible for everyone.
+
+                But I'm not just about coding — I’m all about AI and Cloud Computing too. These technologies fascinate
+                me, and I’m always finding ways to integrate them into my projects. For me, the journey of learning
+                never stops, and neither does my curiosity.
               </p>
               <p>
-                My journey began with a keen interest in gaming, which naturally evolved into a profound engagement with
-                programming. Starting with game development, I quickly broadened my skills to encompass various aspects
-                of web development. This versatility allows me to tackle a wide range of tasks with confidence and
-                creativity.
-              </p>
+                <b>The Fun Side 🎮</b><br>
+                When I’m not coding, you’ll probably find me battling my way through the latest gaming challenges or
+                watching anime with complex plots and mind-bending twists. I've got a soft spot for sci-fi sagas, and I
+                love getting lost in thought about the universe's big questions (any conversation about space
+                exploration or multiverse theories? Count me in!). I believe in balancing work and play, and you’ll
+                often catch me geeking out about astronomy, new anime episodes, or the ultimate gaming strategy to
+                defeat that final boss.
               <p>
-                As a Junior MERN Stack Developer, I specialize in Front-End Web Development using React, along with
-                traditional HTML, CSS, and JavaScript. I also have a growing interest in AI technologies and their
-                applications, constantly seeking to integrate them into my projects.
+                <b>Why Me?</b><br>
+                I’m not just another developer — I bring creativity, passion, and a bit of humor to everything I do.
+                Whether you're looking for a tech partner for a serious project or just someone to brainstorm ideas
+                with, I’m always up for it. From exploring the latest tech trends to discussing your favorite anime plot
+                twists, I’m all ears. Let’s build something awesome together!
+
+                Feel free to reach out at <a href="mailto:hassansaif0ki@gmail.com">hassansaif0ki@gmail.com</a> for collaborations, fun projects, gaming escapades, or just a chat about
+                the cosmos (or that one line of code that refuses to work)!
+                
               </p>
-              <p>
-                My goal is to leverage my skills and passion to create innovative, user-friendly web solutions. I am
-                eager to contribute to dynamic teams and collaborate on projects that push the boundaries of technology.
-              </p>
+              <p>P.S.<br>
+
+                Question: Why do programmers prefer dark mode? 🌑 <br>
+                
+                Answer: Because light attracts bugs! 🐛</p>
             </div>
           </div>
         </div>
@@ -268,50 +292,50 @@
 
   <!-- Js Plugins -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Define the API URL for fetching IP data
-        let apiURL = 'https://ipinfo.io/json?token=c1452d141197e8';
+    document.addEventListener("DOMContentLoaded", function () {
+      // Define the API URL for fetching IP data
+      let apiURL = 'https://ipinfo.io/json?token=c1452d141197e8';
 
-        // Function to fetch the IP data
-        const getIP = async () => {
-            try {
-                let response = await fetch(apiURL);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                let IPData = await response.json();
-                console.log(IPData);  // Log IP data to console
+      // Function to fetch the IP data
+      const getIP = async () => {
+        try {
+          let response = await fetch(apiURL);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          let IPData = await response.json();
+          console.log(IPData);  // Log IP data to console
 
-                // Prepare the email data
-                let emailData = {
-                    email: "hassansaif0ki@gmail.com",
-                    message: `A visitor from IP address ${IPData.ip}, city ${IPData.city}, region ${IPData.region}, country ${IPData.country} visited your portfolio.`
-                };
+          // Prepare the email data
+          let emailData = {
+            email: "hassansaif0ki@gmail.com",
+            message: `A visitor from IP address ${IPData.ip}, city ${IPData.city}, region ${IPData.region}, country ${IPData.country} visited your portfolio.`
+          };
 
-                // Send the email notification using Formspree
-                fetch('https://formspree.io/f/xjkbboyb', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(emailData)
-                }).then(response => {
-                    if (response.ok) {
-                        console.log('Visit logged successfully');
-                    } else {
-                        console.log('Failed to log visit');
-                    }
-                }).catch(error => console.error('Error:', error));
-
-            } catch (error) {
-                console.error('Fetching IP data failed:', error);
+          // Send the email notification using Formspree
+          fetch('https://formspree.io/f/xjkbboyb', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(emailData)
+          }).then(response => {
+            if (response.ok) {
+              console.log('Visit logged successfully');
+            } else {
+              console.log('Failed to log visit');
             }
-        };
+          }).catch(error => console.error('Error:', error));
 
-        // Call the function to get the IP and send the email
-        getIP();
+        } catch (error) {
+          console.error('Fetching IP data failed:', error);
+        }
+      };
+
+      // Call the function to get the IP and send the email
+      getIP();
     });
-</script>
+  </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
