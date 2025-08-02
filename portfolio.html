@@ -2,28 +2,71 @@
 <html lang="zxx">
 
 <head>
+  <!-- Basic & SEO Meta -->
   <meta charset="UTF-8" />
-  <meta name="description" content="Videograph Template" />
-  <meta name="keywords" content="Videograph, unica, creative, html" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Hassan Portfolio</title>
-  <link rel="icon" type="image/png" href="./img/icons8-code-96.png">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+  <title>Hassan Saif – Portfolio & Case Studies</title>
+  <meta name="description"
+    content="Explore the portfolio of Muhammad Hassan Bin Saif: Filterable React, WordPress & Wix projects, in-depth case studies, and live demos." />
+  <link rel="canonical" href="https://mrhassansaif.github.io/my-portfolio2.0/portfolio.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrhassansaif.github.io/my-portfolio2.0/portfolio.html" />
+  <meta property="og:title" content="Hassan Bin Saif | MERN Stack Developer & Freelancer" />
+  <meta property="og:description"
+    content="Explore the portfolio of Muhammad Hassan Bin Saif—MERN enthusiast, React Native lover, and freelance web developer." />
+  <meta property="og:image" content="https://mrhassansaif.github.io/my-portfolio2.0/img/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Mr_Hassansaif" />
+  <meta name="twitter:title" content="Hassan Bin Saif – MERN Developer" />
+  <meta name="twitter:description" content="MERN Stack projects, case studies, and contact info for Hassan Saif." />
+  <meta name="twitter:image" content="https://mrhassansaif.github.io/my-portfolio2.0/img/twitter-card.jpg" />
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="img/icons8-code-96.png" />
+  <link rel="apple-touch-icon" href="img/icons8-code-96.png" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
 
-  <!-- Css Styles -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/elegant-icons.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Hassan Bin Saif",
+    "url": "https://mrhassansaif.github.io/my-portfolio2.0/portfolio.html",
+    "image": "https://mrhassansaif.github.io/my-portfolio2.0/img/og-image.jpg",
+    "jobTitle": "MERN Stack Developer",
+    "sameAs": [
+      "https://github.com/mrhassansaif",
+      "https://www.linkedin.com/in/hassan-saif-908901184/"
+    ],
+    "knowsAbout": ["React.js","Node.js","JavaScript","WordPress","Wix","UI/UX"]
+  }
+  </script>
 </head>
+
 
 <body>
   <!-- Page Preloder -->
@@ -71,16 +114,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <div class="breadcrumb__text">
-            <h2>My Portfolio</h2>
-            <div class="breadcrumb__links">
-              <a href="#">Home</a>
-              <span>Portfolio</span>
-            </div>
+          <div class="breadcrumb__links">
+            <a href="./index.html">Home</a>
+            <span>Portfolio</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- Breadcrumb End -->
 
@@ -92,6 +133,7 @@
           <ul class="portfolio__filter">
             <li class="active" data-filter="*">All</li>
             <li data-filter=".vanila-js">HTML/CSS/JS</li>
+            <li data-filter=".wix">Wix</li>
             <li data-filter=".wordpress">Wordpress</li>
             <li data-filter=".shopify">Shopify</li>
             <li data-filter=".react">React</li>
@@ -100,19 +142,37 @@
         </div>
       </div>
       <div class="row portfolio__gallery">
-        <div class="col-lg-4 col-md-6 col-sm-6 mix vanila-js">
+        <div class="col-lg-4 col-md-6 col-sm-6 mix wix">
           <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/PORT.png">
-              <a href="https://mrhassansaif.github.io/my_portfolio/" target="_blank" class="play-btn video-popup"><i
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/xlpro.png">
+              <a href="https://www.xlpro.com/" target="_blank" class="play-btn video-popup"><i
                   class="fa fa-external-link"></i></a>
             </div>
             <div class="portfolio__item__text">
-              <h4>My Portfolio</h4>
-              <ul>
-                <li>
-                  A simple portfolio made when I was learning web Development.
-                </li>
-              </ul>
+              <h4>XL Pro Staffing & Consulting (Wix)</h4>
+              <span>A professional business website built using Wix for a <b>Texas-based staffing agency</b>. Includes
+                multiple pages like services, job listings, and contact forms. Fully responsive, SEO-optimized, and
+                integrated with CMS collections for dynamic content.
+
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mix wix">
+          <div class="portfolio__item">
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/xlpromedia.png">
+              <a href="https://www.xlpromedia.com/" target="_blank" class="play-btn video-popup"><i
+                  class="fa fa-external-link"></i></a>
+            </div>
+            <div class="portfolio__item__text">
+              <h4>XL Pro Media (Wix)</h4>
+              <span>A polished, responsive Wix website built for XL Pro Media, a <b>Dallas‑based digital marketing
+                  agency.</b>
+                Showcases core services like website development, email marketing, video production, and social media
+                management. Includes a clean one‑page layout with call‑to‑action buttons and contact section, built
+                using Wix's built‑in tools and CMS.
+
+              </span>
             </div>
           </div>
         </div>
@@ -124,22 +184,8 @@
             </div>
             <div class="portfolio__item__text">
               <h4>Weather App</h4>
-              <span>Simple one page real-time Weather update app using Vanila JS
+              <span>Simple one page real-time Weather update app using Vanilla JS
                 and AccuWeather API.</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mix react">
-          <div class="portfolio__item">
-            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/tododo.png">
-              <a href="https://cocky-hopper-5d25c8.netlify.app/" target="_blank" class="play-btn video-popup"><i
-                  class="fa fa-external-link"></i></a>
-            </div>
-            <div class="portfolio__item__text">
-              <h4>Todo App</h4>
-              <ul>
-                <li>Simple Todo App with LocalStorage</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -217,6 +263,44 @@
             </div>
           </div>
         </div>
+         <div class="col-lg-4 col-md-6 col-sm-6 mix wordpress">
+          <div class="portfolio__item">
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/newfurn.png">
+              <a href="https://newfurnituresource.com/" target="_blank" class="play-btn video-popup"><i
+                  class="fa fa-external-link"></i></a>
+            </div>
+            <div class="portfolio__item__text">
+              <h4>New Furniture Source</h4>
+              <ul>
+                <li>
+                  A clean, modern e‑commerce site built on WordPress for <b>Furniture Source Dallas.</b> Showcases curated
+                  categories like Living Room, Dining, Bedrooms & Office plus blog, financing options, and
+                  WooCommerce-based checkout. Optimized for SEO, fast loading, mobile-responsive, and easy backend
+                  inventory management.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mix wordpress">
+          <div class="portfolio__item">
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/capriaccounting.png">
+              <a href="https://capriaccounting.com/" target="_blank" class="play-btn video-popup"><i
+                  class="fa fa-external-link"></i></a>
+            </div>
+            <div class="portfolio__item__text">
+              <h4>Capri Accounting</h4>
+              <ul>
+                <li>
+                  A professional WordPress website for a <b>Dallas-based accounting firm,</b> featuring services pages, pricing
+                  tiers, blog, contact forms, and client-tools section. Fully responsive and branded, built for
+                  conversion with structured data, easy updates, and built-in SEO strategies so the firm looks polished
+                  on mobile and desktop.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 col-sm-6 mix wordpress">
           <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/co.png">
@@ -256,7 +340,7 @@
               <h4>DFW MACC</h4>
               <ul>
                 <li>Developed a dynamic website for DFWMACC, a non-profit Chamber of Commerce in Dallas Fort Worth,
-                  empowering over 150,000 Muslim entrepreneurs to thrive in North Texas.</li>
+                  empowering over 150,00 Muslim entrepreneurs to thrive in North Texas.</li>
               </ul>
             </div>
           </div>
@@ -311,6 +395,20 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 mix react">
           <div class="portfolio__item">
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/tododo.png">
+              <a href="https://cocky-hopper-5d25c8.netlify.app/" target="_blank" class="play-btn video-popup"><i
+                  class="fa fa-external-link"></i></a>
+            </div>
+            <div class="portfolio__item__text">
+              <h4>Todo App</h4>
+              <ul>
+                <li>Simple Todo App with LocalStorage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mix react">
+          <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/igCloneReact.png">
               <a href="https://ig-ui-clone-lightbox.netlify.app/" target="_blank" class="play-btn video-popup"><i
                   class="fa fa-external-link"></i></a>
@@ -336,6 +434,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 col-sm-6 mix react">
           <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/weathReact.png">
@@ -353,6 +452,8 @@
             </div>
           </div>
         </div>
+       
+
         <div class="col-lg-4 col-md-6 col-sm-6 mix react">
           <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/quizapp.png">
@@ -369,6 +470,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 col-sm-6 mix react">
           <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/gitprofe.png">
@@ -434,6 +536,22 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mix vanila-js">
+          <div class="portfolio__item">
+            <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/PORT.png">
+              <a href="https://mrhassansaif.github.io/my_portfolio/" target="_blank" class="play-btn video-popup"><i
+                  class="fa fa-external-link"></i></a>
+            </div>
+            <div class="portfolio__item__text">
+              <h4>My Portfolio</h4>
+              <ul>
+                <li>
+                  A simple portfolio made when I was learning web Development.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 col-sm-6 mix reactnative">
           <div class="portfolio__item">
             <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/khanasub.jpeg">
@@ -458,39 +576,54 @@
   <!-- Portfolio Section End -->
 
   <!-- Footer Section Begin -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__top">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="footer__top__logo">
-              <!-- <a href="#"><img src="img/logo.png" alt="" /></a> -->
-            </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a href="index.html" class="footer__logo" aria-label="Go to homepage">
+              <!-- Optional: <img src="img/logo.png" alt="Hassan Saif Logo" /> -->
+              <h2>Hassan Bin Saif</h2>
+            </a>
           </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="footer__top__social">
-              <a href="https://www.facebook.com/mr.hassansaif/"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/Mr_Hassansaif"><i class="fa fa-twitter"></i></a>
-              <a href="https://github.com/mrhassansaif"><i class="fa fa-github"></i></a>
-              <a href="https://www.instagram.com/mrhassan_saif/"><i class="fa fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/hassan-saif-908901184/"><i class="fa fa-linkedin"></i></a>
+
+          <div class="col-md-6 text-md-right">
+            <div class="footer__social" aria-label="Social media links">
+              <a href="https://www.facebook.com/mr.hassansaif/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/Mr_Hassansaif" target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/mrhassansaif" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/mrhassan_saif/" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hassan-saif-908901184/" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="footer__copyright">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="footer__copyright__text">
-              Copyright &copy; 2020 | All rights reserved
-            </p>
-          </div>
-        </div>
+      <div class="footer__copyright text-center">
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad Hassan Bin Saif. All rights reserved.
+        </p>
       </div>
     </div>
+
+    <!-- Dynamic Year Script -->
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
   </footer>
   <!-- Footer Section End -->
+
 
   <!-- Js Plugins -->
   <script src="js/jquery-3.3.1.min.js"></script>

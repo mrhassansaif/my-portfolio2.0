@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
+    <!-- Basic & SEO Meta -->
     <meta charset="UTF-8" />
-    <meta name="description" content="Videograph Template" />
-    <meta name="keywords" content="Videograph, unica, creative, html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hassan Portfolio | Contact</title>
-    <link rel="icon" type="image/png" href="./img/icons8-code-96.png">
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
-      rel="stylesheet"
+    <title>Hassan Saif – Contact Me</title>
+    <meta
+      name="description"
+      content="Reach out to Muhammad Hassan Bin Saif: MERN developer open to freelance, full-time roles, and collaboration. Let’s build something great!"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="canonical"
+      href="https://mrhassansaif.github.io/my-portfolio2.0/contact.html"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mrhassansaif.github.io/my-portfolio2.0/contact.html"
+    />
+    <meta
+      property="og:title"
+      content="Hassan Bin Saif | MERN Stack Developer & Freelancer"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Muhammad Hassan Bin Saif—MERN enthusiast, React Native lover, and freelance web developer."
+    />
+    <meta
+      property="og:image"
+      content="https://mrhassansaif.github.io/my-portfolio2.0/img/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Mr_Hassansaif" />
+    <meta name="twitter:title" content="Hassan Bin Saif – MERN Developer" />
+    <meta
+      name="twitter:description"
+      content="MERN Stack projects, case studies, and contact info for Hassan Saif."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mrhassansaif.github.io/my-portfolio2.0/img/twitter-card.jpg"
+    />
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="img/icons8-code-96.png" />
+    <link rel="apple-touch-icon" href="img/icons8-code-96.png" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Hassan Bin Saif",
+        "url": "https://mrhassansaif.github.io/my-portfolio2.0/contact.html",
+        "image": "https://mrhassansaif.github.io/my-portfolio2.0/img/og-image.jpg",
+        "jobTitle": "MERN Stack Developer",
+        "sameAs": [
+          "https://github.com/mrhassansaif",
+          "https://www.linkedin.com/in/hassan-saif-908901184/"
+        ],
+        "knowsAbout": [
+          "React.js",
+          "Node.js",
+          "JavaScript",
+          "WordPress",
+          "Wix",
+          "UI/UX"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -89,7 +156,7 @@
             <div class="breadcrumb__text">
               <h2>How to reach me?</h2>
               <div class="breadcrumb__links">
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
                 <span>Contact</span>
               </div>
             </div>
@@ -161,18 +228,29 @@
           <div class="col-lg-6 col-md-6">
             <div class="contact__form">
               <h3>Get in touch</h3>
-              <form id="contactForm" action="https://formspree.io/f/manwwben" method="POST">
-                  <input type="hidden" name="_subject" value="Message Recived On Hassan-Portfolio">
-                  <input type="hidden" name="_honey" style="display:none">
-                  <input type="hidden" name="_template" value="table">
-                  <input type="text" name="name" placeholder="Name" required />
-                  <input type="email" name="email" placeholder="Email" required />
-                  <input type="url" name="website" placeholder="Website" />
-                  <textarea name="message" placeholder="Message" required></textarea>
-                  <button type="submit" class="site-btn">Send Message</button>
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/manwwben"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Message Recived On Hassan-Portfolio"
+                />
+                <input type="hidden" name="_honey" style="display: none" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit" class="site-btn">Send Message</button>
               </form>
               <p id="formStatus" class="form-status"></p>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -180,93 +258,125 @@
     <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         <div class="footer__top">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="footer__top__logo">
-                <!-- <a href="#"><img src="img/logo.png" alt="" /></a> -->
-              </div>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <a
+                href="index.html"
+                class="footer__logo"
+                aria-label="Go to homepage"
+              >
+                <!-- Optional: <img src="img/logo.png" alt="Hassan Saif Logo" /> -->
+                <h2>Hassan Bin Saif</h2>
+              </a>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="footer__top__social">
-                <a href="https://www.facebook.com/mr.hassansaif/"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a href="https://twitter.com/Mr_Hassansaif"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-                <a href="https://github.com/mrhassansaif"
-                  ><i class="fa fa-github"></i
-                ></a>
-                <a href="https://www.instagram.com/mrhassan_saif/"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/hassan-saif-908901184/"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
+
+            <div class="col-md-6 text-md-right">
+              <div class="footer__social" aria-label="Social media links">
+                <a
+                  href="https://www.facebook.com/mr.hassansaif/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                >
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://twitter.com/Mr_Hassansaif"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Twitter"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://github.com/mrhassansaif"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                >
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/mrhassan_saif/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/hassan-saif-908901184/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="footer__copyright">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <p class="footer__copyright__text">
-                Copyright &copy; 2020 | All rights reserved
-              </p>
-            </div>
-          </div>
+        <div class="footer__copyright text-center">
+          <p>
+            &copy; <span id="currentYear"></span> Muhammad Hassan Bin Saif. All
+            rights reserved.
+          </p>
         </div>
       </div>
+
+      <!-- Dynamic Year Script -->
+      <script>
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+      </script>
     </footer>
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
     <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent the default form submission
-  
-          const formStatus = document.getElementById('formStatus');
-          let dots = 0;
-          const loadingText = 'Sending';
-  
-          // Function to update the loader text
-          const updateLoader = () => {
-              formStatus.textContent = loadingText + ' .'.repeat(dots);
-              dots = (dots + 1) % 4;
-          };
-  
-          // Start the loader interval
-          const loaderInterval = setInterval(updateLoader, 500);
-  
-          const formData = new FormData(this);
-  
-          fetch(this.action, {
-              method: this.method,
-              body: formData,
-              headers: {
-                  'Accept': 'application/json'
-              }
-          }).then(response => {
-              clearInterval(loaderInterval); // Stop the loader animation
-              if (response.ok) {
-                  formStatus.textContent = 'Message sent successfully!';
-                  this.reset();
-              } else {
-                  response.json().then(data => {
-                      formStatus.textContent = data.error || 'Failed to send message.';
-                  });
-              }
-          }).catch(error => {
-              clearInterval(loaderInterval); // Stop the loader animation
-              formStatus.textContent = 'Failed to send message.';
-          });
-      });
-  </script>
-      
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formStatus = document.getElementById('formStatus');
+  const submitBtn = this.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+
+  let dots = 0, loadingText = 'Sending';
+  const spinner = setInterval(() => {
+    formStatus.textContent = loadingText + ' .'.repeat(dots);
+    dots = (dots + 1) % 4;
+  }, 500);
+
+  fetch(this.action, {
+    method: this.method,
+    body: new FormData(this),
+    headers: { 'Accept': 'application/json' }
+  })
+    .then(response => {
+      clearInterval(spinner);
+      submitBtn.disabled = false;
+      if (response.ok) {
+        formStatus.textContent = 'Message sent successfully!';
+        this.reset();
+      } else {
+        response.json().then(data => {
+          formStatus.textContent = data.error || 'Failed to send message.';
+        });
+      }
+    })
+    .catch(() => {
+      clearInterval(spinner);
+      submitBtn.disabled = false;
+      formStatus.textContent = 'Failed to send message.';
+    });
+});
+
+    </script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
